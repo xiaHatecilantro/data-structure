@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Campus System",
+            "command": "C:\\Program Files\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.c",
+                "login.c",
+                "campus_menu.c", 
+                "campus_map.c",
+                "campus_info.c",
+                "campus_modify.c",
+                "campus_path.c",
+                "-o",
+                "${fileDirname}\\campus_system.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译器: C:\\Program Files\\mingw64\\bin\\gcc.exe"
+        }
+    ]
+}
